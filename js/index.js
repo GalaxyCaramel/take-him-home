@@ -1,6 +1,6 @@
 const clock = document.getElementsByClassName("real-time-clock")[0];
 const clock2 = document.getElementsByClassName("real-time-clock-2")[0];
-const clock2 = document.getElementsByClassName("real-time-clock-3")[0];
+const clock3 = document.getElementsByClassName("real-time-clock-3")[0];
 
 const calculateTotal = (dday) => {
   const now = new Date()
