@@ -40,8 +40,8 @@ const calculateSincePast = (dday) => {
 
 const render = () => {
     const [day, hours, minutes, seconds] = calculateTotal(new Date("2024-05-07T00:00+09:00"));
-    const [day2, hours2, minutes2, seconds2] = calculateTotal(new Date("2024-06-11T00:00+09:00"));
-    const [day3, hours3, minutes3, seconds3] = calculateTotal(new Date("2024-06-11T13:30+09:00"));
+    const [day2, hours2, minutes2, seconds2] = calculateTotal(new Date("2024-07-04T00:00+09:00"));
+    const [day3, hours3, minutes3, seconds3] = calculateTotal(new Date("2024-06-27T12:00+09:00"));
 
 
     clock.innerHTML = `입대한지 ${day}일 ${hours}시간 ${minutes}분 ${seconds}초 되었습니다.`;
