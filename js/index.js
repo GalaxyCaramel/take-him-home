@@ -40,13 +40,11 @@ const calculateSincePast = (dday) => {
 
 const render = () => {
     const [day, hours, minutes, seconds] = calculateTotal(new Date("2024-05-07T00:00+09:00"));
-    const [day2, hours2, minutes2, seconds2] = calculateTotal(new Date("2024-07-04T00:00+09:00"));
-    const [day3, hours3, minutes3, seconds3] = calculateTotal(new Date("2024-06-27T12:00+09:00"));
+    const [day2, hours2, minutes2, seconds2] = calculateTotal(new Date("2025-11-06T00:00+09:00"));
 
 
     clock.innerHTML = `입대한지 ${day}일 ${hours}시간 ${minutes}분 ${seconds}초 되었습니다.`;
-    clock2.innerHTML = `수료일 까지 ${day2}일 ${hours2}시간 ${minutes2}분 ${seconds2}초 남았습니다.`;
-    clock3.innerHTML = `2차 분류 결과 까지 ${day3}일 ${hours3}시간 ${minutes3}분 ${seconds3}초 남았습니다.`;
+    clock2.innerHTML = `전역 까지 ${day2}일 ${hours2}시간 ${minutes2}분 ${seconds2}초 남았습니다.`;
 }
 
 setInterval(render, 1000);
