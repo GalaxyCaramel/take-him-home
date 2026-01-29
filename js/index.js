@@ -39,12 +39,12 @@ const calculateSincePast = (dday) => {
 }
 
 const render = () => {
-    const [day, hours, minutes, seconds] = calculateTotal(new Date("2024-05-07T00:00+09:00"));
-    const [day2, hours2, minutes2, seconds2] = calculateTotal(new Date("2025-11-06T00:00+09:00"));
+    const [day, hours, minutes, seconds] = calculateTotal(new Date("2025-11-06T00:00+09:00"));
+    const [day2, hours2, minutes2, seconds2] = calculateTotal(new Date("2024-05-07T00:00+09:00"));
 
 
-    clock.innerHTML = `입대한지 ${day}일 ${hours}시간 ${minutes}분 ${seconds}초 되었습니다.`;
-    clock2.innerHTML = `전역한지 ${day2}일 ${hours2}시간 ${minutes2}분 ${seconds2}초 지습니다.`;
+    clock.innerHTML = `전역한지 ${day}일 ${hours}시간 ${minutes}분 ${seconds}초 되었습니다.`;
+    clock2.innerHTML = `입대한지 ${day2}일 ${hours2}시간 ${minutes2}분 ${seconds2}초 되었습니다.`;
 }
 
 setInterval(render, 1000);
